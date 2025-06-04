@@ -2,7 +2,7 @@
 #!desc = 个人常用的小程序去广告
 #!App链接 = https://apps.apple.com/app/id414478124
 #!author = @shadowchowwc
-#!homepage = 插件首页，可在插件页面进行跳转
+#!homepage = https://github.com/shadowchowwc
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/WeixinMiniPrograms.png
 #!system = iOS
 #!system_version = 18.2
