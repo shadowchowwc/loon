@@ -1,0 +1,18 @@
+#!name = 微信小程序去广告
+#!desc = 个人常用的小程序去广告
+#!App链接 = https://apps.apple.com/app/id414478124
+#!author = @shadowchowwc
+#!homepage = 插件首页，可在插件页面进行跳转
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/WeixinMiniPrograms.png
+#!system = iOS
+#!system_version = 18.2
+#!loon_version = 3.2.1(372)
+#!tag = 去广告
+#!date = 2025-06-04 10:14:08
+
+[rewrite]
+# > 我的医保凭证小程序
+^https?:\/\/card\.wecity\.qq\.com\/trpcapi\/AdvCfg\/AdvRulePlayV2 reject
+
+[mitm]
+hostname = card.wecity.qq.com
