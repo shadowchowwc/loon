@@ -11,7 +11,7 @@
 #!date=2023-09-08 13:48:55
 
 [Script]
-http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers)\/* script-path=https://gitlab.com/isous/loonresource/-/raw/main/Script/Scanner_Pro/Scanner_Pro_crack.js,requires-body=true,tag=Scanner Pro解锁
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers)\/* script-path=https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/script/scanner_pro.js,requires-body=true,tag=Scanner Pro解锁
 
 [MitM]
 hostname=api.revenuecat.com
