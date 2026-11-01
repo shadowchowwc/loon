@@ -1,4 +1,6 @@
 /*
+脚本作者：Keywos[https://github.com/Keywos]
+脚本日期：2025-02-19
 脚本引用https://raw.githubusercontent.com/Keywos/rule/main/JS/baiduindex.js
 */
 //2023-09-13 22:48:24
