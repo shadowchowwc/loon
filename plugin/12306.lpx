@@ -1,0 +1,19 @@
+#!name=12306去广告 by Shadow
+#!desc=过滤12306应用内广告及开屏广告
+#!openUrl=https://apps.apple.com/app/id564818797
+#!icon=https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/icon/12306.jpg
+#!author=RuCu6[https://github.com/RuCu6]
+#!homepage=https://nsloon.app/docs/General/#include-tun
+#!loon_version=3.5.3(1007)
+
+[Rule]
+DOMAIN,ad.12306.cn,DIRECT
+
+[Rewrite]
+response if ${url} ~= /^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList$/i then response.json.delete(["materialsList", "advertParam"])
+
+[Script]
+request if ${url} ~= /^https:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$/i then script("https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/script/12306.js") with tag="移除12306应用内广告"
+
+[MITM]
+hostname = ad.12306.cn, mobile.12306.cn
