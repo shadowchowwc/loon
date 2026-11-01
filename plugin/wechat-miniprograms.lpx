@@ -8,7 +8,7 @@
 
 [rewrite]
 # > 我的医保凭证小程序
-^https?:\/\/card\.wecity\.qq\.com\/trpcapi\/AdvCfg\/AdvRulePlayV2 reject
+request if ${url} ~= /^https:\/\/card\.wecity\.qq\.com\/trpcapi\/AdvCfg\/AdvRulePlayV2(?:\?.*)?$/i then reject(404)
 
 [mitm]
 hostname = card.wecity.qq.com
