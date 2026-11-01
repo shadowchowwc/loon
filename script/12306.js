@@ -1,14 +1,7 @@
 /*
-引用地址https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/header.js
-*/
-// 2024-11-24 18:15
-
-
-/*
-引用地址：
-https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/header.js
-
-12306 专用修正版
+脚本作者：RuCu6[https://github.com/RuCu6]
+脚本日期：2024-11-24
+引用地址：https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/header.js
 */
 
 const url = $request.url;
