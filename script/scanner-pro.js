@@ -1,5 +1,5 @@
 /*
-脚本作者：Marol62926
+脚本作者：Marol62926[https://github.com/Marol62926]
 脚本日期：2022-09-10
 引用地址：https://raw.githubusercontent.com/Marol62926/MarScrpt/main/scannerPro.js
 */
