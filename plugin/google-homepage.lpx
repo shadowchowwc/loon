@@ -1,0 +1,9 @@
+#!name=Google 搜索首页
+#!desc=使用简洁版 Google 搜索首页
+#!author=Shadow
+
+[Script]
+response if ${url} ~= /^https:\/\/www\.google\.com\/(?:\?.*)?$/i && ${response.status} == 200 then script("https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/script/GoogleSearchHomePage.js") with tag="Google首页替换"
+
+[MITM]
+hostname = www.google.com
