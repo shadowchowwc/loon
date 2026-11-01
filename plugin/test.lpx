@@ -1,10 +1,10 @@
-#!name=12306去广告 by Shadow
-#!desc=
-#!date=2026-11-01
-#!homepage=https://github.com/shadowchowwc
-#!author=Shadow[https://github.com/shadowchowwc]
-#!openUrl=https://apps.apple.com/app/id564818797
-#!icon=https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/icon/.jpg
+#!name = 12306去广告 by Shadow
+#!desc = 
+#!date = 2026-11-01
+#!homepage = https://github.com/shadowchowwc
+#!author = Shadow[https://github.com/shadowchowwc]
+#!openUrl = https://apps.apple.com/app/id564818797
+#!icon = https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/icon/
 
 [Rule]
 
