@@ -1,0 +1,13 @@
+#!name = Reddit 去广告 by Shadow 暂时不知道 JS 代码
+#!desc = 过滤应用内推广，阻止NSFW提示。
+#!date = 2026-11-01
+#!homepage = https://github.com/shadowchowwc
+#!author = 可莉[https://hub.kelee.one], Shadow[https://github.com/shadowchowwc]
+#!openUrl = https://apps.apple.com/app/id1064216828
+#!icon = https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/icon/reddit.jpg
+
+[Rewrite]
+response if ${url} ~= /^https?:\/\/gql(-fed)?\.reddit\.com/i then response.json.jq_file("https://kelee.one/Resource/JQLang/Reddit/Reddit_remove_ads.jq")
+
+[MITM]
+hostname = gql.reddit.com, gql-fed.reddit.com
