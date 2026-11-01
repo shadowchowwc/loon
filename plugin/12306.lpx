@@ -1,9 +1,10 @@
-#!name=12306去广告 by Shadow
-#!desc=过滤12306应用内广告及开屏广告
+#!name=12306 去广告 by Shadow
+#!desc=过滤 12306 应用内广告及开屏广告
+#!date=2026-11-01
+#!homepage=https://github.com/shadowchowwc
+#!author=RuCu6[https://github.com/RuCu6], Shadow[https://github.com/shadowchowwc]
 #!openUrl=https://apps.apple.com/app/id564818797
 #!icon=https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/icon/12306.jpg
-#!author=RuCu6[https://github.com/RuCu6]
-#!homepage=https://github.com/shadowchowwc/loon
 
 [Rule]
 DOMAIN,ad.12306.cn,DIRECT
