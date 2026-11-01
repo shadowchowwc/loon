@@ -1,9 +1,10 @@
 #!name=本机开发服务回环 by Shadow
-#!desc=配置[General]中添加参数 include-tun，与 bypass-tun 作用相反：让指定 IPv4 网段进入 Loon 的 TUN，具体实现参考文档：https://nsloon.app/docs/General/#include-tun
+#!desc=配置文件 [General] 中添加参数 include-tun，与 bypass-tun 作用相反，让指定 IPv4 网段进入 Loon 的 TUN
+#!date=2026-11-01
+#!homepage=https://github.com/shadowchowwc
+#!author=ios151[https://github.com/ios151], Shadow[https://github.com/shadowchowwc]
+#!openUrl=https://nsloon.app/docs/General/#include-tun
 #!icon=https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/icon/dev-loopback.png
-#!author=bb
-#!homepage=https://nsloon.app/docs/General/#include-tun
-#!loon_version=3.5.3(1007)
 
 [General]
 ipv6-vif = off
