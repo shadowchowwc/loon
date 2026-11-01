@@ -1,0 +1,21 @@
+#!name = 微信去广告 by Shadow
+#!desc = 小程序、公众号去广告
+#!date = 2026-11-01
+#!homepage = https://github.com/shadowchowwc
+#!author = RuCu6[https://github.com/RuCu6], Shadow[https://github.com/shadowchowwc]
+#!openUrl = https://apps.apple.com/app/id414478124
+#!icon = https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/icon/wechat.jpg
+
+[Rule]
+DOMAIN-SUFFIX,wxs.qq.com,REJECT
+
+[rewrite]
+# > 我的医保凭证小程序
+request if ${url} ~= /^https:\/\/card\.wecity\.qq\.com\/trpcapi\/AdvCfg\/AdvRulePlayV2(?:\?.*)?$/i then reject(404)
+
+# > 公众号去广告
+request if ${url} ~= /^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|jsmonitor|masonryfeed|relatedarticle)\?/i then reject_dict(200)
+request if ${url} ~= /^https:\/\/mp\.weixin\.qq\.com\/mp\/relatedsearchword/i then reject_dict(200)
+
+[mitm]
+hostname = card.wecity.qq.com, mp.weixin.qq.com
