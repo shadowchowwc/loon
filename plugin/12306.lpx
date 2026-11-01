@@ -4,7 +4,6 @@
 #!icon=https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/icon/12306.jpg
 #!author=RuCu6[https://github.com/RuCu6]
 #!homepage=https://github.com/shadowchowwc/loon
-#!loon_version=3.5.3(1007)
 
 [Rule]
 DOMAIN,ad.12306.cn,DIRECT
