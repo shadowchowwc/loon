@@ -1,4 +1,4 @@
-#!name=本机开发服务回环
+#!name=本机开发服务回环 by Shadow
 #!desc=配置[General]中添加参数 include-tun，与 bypass-tun 作用相反：让指定 IPv4 网段进入 Loon 的 TUN，具体实现参考文档：https://nsloon.app/docs/General/#include-tun
 #!icon=https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/icon/dev-loopback.png
 #!author=bb
