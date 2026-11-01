@@ -1,0 +1,15 @@
+#!name=12306去广告 by Shadow
+#!desc=
+#!openUrl=https://apps.apple.com/app/id564818797
+#!icon=https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/icon/.jpg
+#!author=Shadow[https://github.com/shadowchowwc]
+#!homepage=https://github.com/shadowchowwc
+
+[Rule]
+
+[Rewrite]
+
+[Script]
+
+[MITM]
+hostname = 
