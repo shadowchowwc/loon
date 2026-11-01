@@ -4,7 +4,7 @@
 #!homepage = https://github.com/shadowchowwc
 #!author = Shadow[https://github.com/shadowchowwc]
 #!openUrl = https://apps.apple.com/app/id818237113
-#!icon = https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/icon/sam's_club.jpg
+#!icon = https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/icon/sam's-club.jpg
 
 [Script]
 ^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/sams-user\/(window\/getGoUpPlus|screen_promotion\/get) reject
