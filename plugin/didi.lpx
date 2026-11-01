@@ -1,0 +1,19 @@
+#!name = 滴滴去广告 by Shadow
+#!desc = 移除开屏广告、弹窗广告、横幅推广，精简我的页面。
+#!date = 2026-11-01
+#!homepage = https://github.com/shadowchowwc
+#!author = 可莉[https://hub.kelee.one/], Shadow[https://github.com/shadowchowwc]
+#!openUrl = https://apps.apple.com/app/id554499054
+#!icon = https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/icon/didi.jpg
+
+[Rule]
+DOMAIN,gwp.xiaojukeji.com,REJECT
+DOMAIN,gwpgz.diditaxi.com.cn,REJECT
+DOMAIN,adtrack.xiaojukeji.com,REJECT
+
+[Rewrite]
+
+
+
+[MITM]
+hostname = as.xiaojukeji.com, conf.diditaxi.com.cn, common.diditaxi.com.cn, res.xiaojukeji.com, api.udache.com, daijia.kuaidadi.com, htwkop-st.xiaojukeji.com, htwkop.xiaojukeji.com, freight.xiaojukeji.com, poi.map.xiaojukeji.com
