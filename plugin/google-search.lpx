@@ -1,0 +1,14 @@
+#!name = Google 搜索重定向 by Shadow
+#!desc = 将 Google 搜索重定向至 .com 域名，如遇频繁跳转请禁用本插件。
+#!date = 2026-11-01
+#!homepage = https://github.com/shadowchowwc
+#!author = 可莉[https://hub.kelee.one], Shadow[https://github.com/shadowchowwc]
+#!openUrl = https://google.com
+#!icon = https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/icon/google.jpg
+
+[Rewrite]
+request if ${url} ~= /^https?:\/\/(www.)?(g|google)\.cn/i then redirect(307, "https://www.google.com")
+request if ${url} ~= /^https?:\/\/(ditu|maps).google\.cn/i then redirect(307, "https://maps.google.com")
+
+[MITM]
+hostname = www.google.cn
