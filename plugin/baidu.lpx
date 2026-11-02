@@ -7,7 +7,7 @@
 #!icon = https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/icon/baidu.jpg
 
 [Script]
-response if ${url} ~= /^https?:\/\/(www|m)\.baidu\.com\/?($|\?from=\w{8,9})/i then script("https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/script/baidu-homepage.js") with tag="移除百度搜索首页信息流广告", requires_body=true
+response if ${url} ~= /^https?:\/\/(www|m)\.baidu\.com\/?($|\?from=\w{8,9})/i then script("https://raw.githubusercontent.com/shadowchowwc/loon/refs/heads/main/script/baidu-search.js") with tag="移除百度搜索首页信息流广告", requires_body=true
 
 [MitM]
 hostname=m.baidu.com, www.baidu.com
