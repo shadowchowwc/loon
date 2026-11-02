@@ -4,15 +4,20 @@
  * 极简 Google 搜索首页
  * Author: Shadow
  *
- * 自动适配系统深色 / 浅色模式
- * 使用 Google 官方 Logo
+ * 功能：
+ * 1. Google 官方彩色 Logo
+ * 2. 自动适配系统深色 / 浅色模式
+ * 3. 夜间 Logo 保留彩色并降低亮度
+ * 4. 极简搜索框
+ * 5. 搜索结果使用 Google 原生页面
  */
 
 const html = `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <title>Google</title>
 
@@ -23,6 +28,7 @@ const html = `<!DOCTYPE html>
   --search-bg: #f1f3f4;
   --text: #202124;
   --icon: #70757a;
+  --logo-brightness: 1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,10 +38,7 @@ const html = `<!DOCTYPE html>
     --search-bg: #2c2c2e;
     --text: #d3d3d3;
     --icon: #8e8e93;
-  }
-
-  .logo img {
-    filter: grayscale(1) brightness(0) invert(0.82);
+    --logo-brightness: 0.85;
   }
 }
 
@@ -82,10 +85,11 @@ main {
 }
 
 .logo img {
+  display: block;
   width: 180px;
   max-width: 70vw;
   height: auto;
-  display: block;
+  filter: brightness(var(--logo-brightness));
 }
 
 form {
@@ -134,6 +138,7 @@ button {
   justify-content: center;
   cursor: pointer;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 button svg {
