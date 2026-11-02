@@ -1,17 +1,3 @@
-
-/*
- * Google Search Home Page
- * 极简 Google 搜索首页
- * Author: Shadow
- *
- * 功能：
- * 1. Google 官方彩色 Logo
- * 2. 自动适配系统深色 / 浅色模式
- * 3. 夜间 Logo 保留彩色并降低亮度
- * 4. 极简搜索框
- * 5. 搜索结果使用 Google 原生页面
- */
-
 const html = `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
