@@ -68,6 +68,10 @@ main {
   align-items: center;
   justify-content: center;
   margin-bottom: 34px;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .logo img {
@@ -76,6 +80,8 @@ main {
   max-width: 70vw;
   height: auto;
   filter: brightness(var(--logo-brightness));
+  pointer-events: none;
+  -webkit-user-drag: none;
 }
 
 form {
